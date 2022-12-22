@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1 class="leftW">{{page_title}}</h1>
+<div class="bookH">
+<div class="bookD">
+<h1 >Book: {{ book.id }}</h1>
+<h4>Posted by: {{ book.posted_by }}</h4>
+<h2>Title: {{ book.title }}</h2>
+<h3>Author: {{ book.author }}</h3>
+<h4>Year: {{ book.year }}</h4>
+<h4>Rating: {{ book.rating }}</h4>
+<h4>Description: {{ book.description }}</h4>
+</div>
+</div>
+{% if book.posted_by == request.user %}
+    <h5><a class="edit" href="{% url 'update_book' book.id %}">Edit Book</a></h5>
+    <h5><a class="delete" href="{% url 'delete_book' book.id %}">Delete Book</a></h5>
+{% endif %}
+
+{% endblock %}

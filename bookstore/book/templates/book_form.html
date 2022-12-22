@@ -1,0 +1,42 @@
+{% extends 'layout.html' %} {% block content %}
+<main class="create-book layout">
+  <div>
+
+    <div class="layout__box">
+      <h3>Create/Update Book</h3>
+    </div>
+  </div>
+  <div class="layout__body">
+    <form class="form" action="" method="POST">
+      {% csrf_token %}
+
+      <div class="form__group">
+        <label for="title">Title</label>
+        {{form.title}}
+      </div>
+      <div class="form__group">
+        <label for="author">Book Author</label>
+        {{form.author}}
+      </div>
+
+      <div class="form__group">
+        <label for="year">Book Year</label>
+        {{form.year}}
+      </div>
+
+      <div class="form__group">
+        <label for="rating">Book Rating</label>
+        {{form.rating}}
+      </div>
+      <div class="form__group">
+        <label for="description">Book Description</label>
+        {{form.description}}
+      </div>
+
+      <div class="form__action">
+        <button class="btn btn--main" type="submit">Submit Book</button>
+      </div>
+    </form>
+  </div>
+</main>
+{% endblock content %}

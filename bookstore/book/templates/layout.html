@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 13</title>
+    <style>
+        body {
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            /* background-image: url("https://th.bing.com/th/id/R.efd35a6d841953060a0c4b10f763f08c?rik=CJ9NMgFci1tVmg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2ff%2f8%2f4%2f888661-beautiful-library-background-images-1920x1080-iphone.jpg&ehk=4sDpXGMv3dZdR6sK7WCIqhrxrVTpmPIyg8Nr3dm9nl0%3d&risl=&pid=ImgRaw&r=0");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover; */
+        }
+
+        h1 {
+            color: black;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        h3 {
+            color: black;
+        }
+
+        h4 {
+            color: black;
+        }
+
+        h5 {
+            color: black;
+            
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+
+        }
+
+        .aHolder {
+            padding: 0.5rem 0.5rem;
+            text-align: center;
+        }
+
+        .in {
+            display: inline-block;
+            background-color: rgb(97, 0, 216);
+            color: white;
+            border-radius: 20px;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+        }
+
+        a:hover {
+            color: hotpink;
+            background-color: rgb(104, 62, 7);
+        }
+
+        .inn {
+            display: inline-block;
+            background-color: rgb(30, 26, 35);
+            color: white;
+            border-radius: 20px;
+            padding: 1rem 1rem;
+            vertical-align: middle;
+        }
+
+        .inn:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .leftW {
+            font-size: 27px;
+            top: 1px;
+            left: 10px;
+            position: absolute;
+        }
+
+        .leftW::first-letter {
+            font-size: 100%;
+        }
+
+        .hold {
+            height: auto;
+            width: 500px;
+            background-color: white;
+            opacity: 0.5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            color: white;
+            padding: 0 10px;
+            align-content: center;
+            margin-right: 50%;
+            margin: 40px;
+        }
+
+        .login {
+            align-items: center;
+            align-content: center;
+        }
+
+        .holder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        .notS {
+            height: auto;
+            width: 500px;
+            background-color: white;
+            opacity: 0.5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            color: white;
+            padding: 0 10px;
+            align-content: center;
+            margin-right: 50%;
+            margin: 40px;
+
+        }
+
+        .firstP {
+            color: black;
+            font-size: 30px;
+            font-weight: bol;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .loA {
+            border: 1px solid black;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        .bookD{
+            height: auto;
+            background-color: white;
+            opacity: 0.8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            color: white;
+            padding: 0 10px;
+            align-content: center;
+            margin-right: 50%;
+            margin: 1px;
+            border: 1px solid black;
+            
+        }
+        .bookH{
+            align-items: center;
+            align-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .edit{
+            border-radius: 12px;
+            font-size: 30px;
+            background-color: green;
+            color: black;
+        }
+        .delete{
+            border-radius: 12px;
+            font-size: 30px;
+            background-color: red;
+            color: black;
+        }
+      
+        
+    </style>
+</head>
+
+<body>
+    {% include "navbar.html" %}
+
+    <!-- Create block to be overriten -->
+    {% block content %}
+
+    {% endblock %}
+</body>
+
+</html>
